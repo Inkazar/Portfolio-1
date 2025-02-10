@@ -60,4 +60,51 @@ nav ul li a:hover {
     color: #fff;
     z-index: 2;
 }
-
+section {
+    baCKGROUND: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') no-repeat center center/cover;
+    padding: 4rem 0;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+#about {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+#about img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+#cv {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+#cv ul {
+    display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+#cv ul li {
+    margin: 0 1rem;
+}
+#projects {
+    background-color: #fff;
+    
+    padding: 2rem;
+}
+.project {
+    margin: 2rem auto;
+    max-width: 600px;
+    background: #ffffff43;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}

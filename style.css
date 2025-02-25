@@ -5,10 +5,15 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+main {
+    flex: 1;
 }
 
 nav {
@@ -87,6 +92,22 @@ height: 100vh;
     border-radius: 50%;
     border: 5px solid #ea0a0a;
 }
+/* Styling för CV-knappen i hero-sektionen */
+.hero-cv {
+    margin-top: 1rem;  /* Justera avståndet från övriga element */
+    text-align: center;
+  }
+  
+  .hero-cv .cv-button {
+    width: 60px;          /* Ställ in bildens storlek (justera vid behov) */
+    cursor: pointer;      /* Gör det tydligt att bilden är klickbar */
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-cv .cv-button:hover {
+    transform: scale(1.1);  /* Liten zoom-effekt vid hover */
+  }
+  
 
 
 
@@ -112,8 +133,7 @@ section h2 {
 }
 #cv {
     width: 100%;
-
-height: 100vh;
+    height: 100vh;
     padding: 4rem 0;
     background: #22bc5b;
 }
@@ -144,7 +164,7 @@ height: 100vh;
     width: 100%;
     border-radius: 5px;
 }
-#references {
+#reference {
     width: 100%;
 
 height: 100vh;

@@ -27,18 +27,7 @@
             <h1>Hej, jag heter Daniel!</h1>
             <p>.NET-utvecklare to be.</p>
         </div>      
-        <div class="hero-cv">
-
-            <button id="cv-toggle" class="cv-toggle-btn">
-              <img src="/img/cv.png" alt="Ladda ner mitt CV" class="cv-button">
-            </button>
-          </div>
-          <!-- Dropdownlista -->
-            <ul id="cv-options" class="dropdown-options">
-                <li><a href="/files/CV.docx" download>CV</a></li>
-                <li><a href="/files/Personlighetstest.pdf"download>personlighets test</a></li>
-                <li><a href="/files/Logiskt-test.pdf" download>logik-test</a></li>
-            </ul>
+        
         <!-- Bilddelen -->
          <div class="hero-image">
             <img src="/img/Lax.jpg" alt="Bild på mig">
@@ -50,10 +39,25 @@
 <main>
     <section id="about">
         <h2>Om mig</h2>
-        <p>Jag är en passionerad utvecklare med erfarenhet inom .NET 
-            och webbutveckling.</p>
-<img src="https://wallpapers.com/images/featured/coola-profilbilder-vt4w54fxrvenydvu.jpg" alt="Bild på mig">
-    </section>
+        <p>Här skriver du en kort presentation om dig själv – dina intressen, erfarenheter och vad du brinner för.</p>
+        <img src="/img/Lax.jpg" alt="Bild på mig" class="profile-img">
+        
+        <!-- Container för de tre nedladdningsknapparna -->
+        <div class="download-buttons">
+          <a href="/files/CV.docx" download class="download-btn">
+            <img src="/icons/cv.png" alt="Ladda ner mitt CV">
+            <span>CV</span>
+          </a>
+          <a href="/files/Personlighetstest.pdf" download class="download-btn">
+            <img src="/icons/icons8-pdf-64.png" alt="Ladda ner personlighetstestet">
+            <span>Personlighetstest</span>
+          </a>
+          <a href="/files/Logiskt-test.pdf" download class="download-btn">
+            <img src="/icons/icons8-pdf-64.png" alt="Ladda ner logiskt test">
+            <span>Logiskt test</span>
+          </a>
+        </div>
+      </section>
     <!-- <section id="cv">
         <h2>Curriculum Vitae</h2>
         <p>Här är mitt CV, ett personlighets test och ett Logik-test</p>

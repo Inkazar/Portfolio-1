@@ -92,62 +92,7 @@ nav ul li a.active {
     border-radius: 50%;
     border: 2px solid #030303;
 }
-/* Styling för CV-knappen i hero-sektionen  */
-.hero-cv {
-    margin-top: 1rem;  /* Justera avståndet från övriga element */
-    margin-right: 6rem;
-    text-align: center;
-  } 
-  
-  .cv-button {
-    width: 100px;          /* Ställ in bildens storlek (justera vid behov) */
-    cursor: pointer;      /* Gör det tydligt att bilden är klickbar */
-    transition: transform 0.3s ease;
-    display: block;
-  }
 
-  
-  .hero-cv .cv-button:hover {
-    transform: scale(1.1);  /* Liten zoom-effekt vid hover */
-  }
-  /* Styling för dropdown-listan */
-.dropdown-options {
-    display:none;  /* Gömmer listan som standard */
-    list-style:none;
-    padding: 0;
-    margin: 0.5rem 0 0;
-    border: 1px solid #ccc;
-    background: #fff;
-    border-radius: 5px;
-    width: 150px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .dropdown-options li {
-    padding: 0.5rem 1rem;
-  }
-  
-  .dropdown-options li a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-  }
-  
-  /* Hover-effekt på listobjekt */
-  .dropdown-options li:hover {
-    background: #f0f0f0;
-  }
-  .dropdown-options.show {
-    display: block;  /* Visar listan när användaren klickar på knappen */
-  }
-  
-  /* Valfri styling för själva knappen som innehåller bilden */
-  .cv-toggle-btn {
-    background: transparent;
-    border: none;
-    padding: 3rem 0.5rem;
-    cursor: pointer;
-  }
 
 
 
@@ -167,26 +112,57 @@ section h2 {
     padding: 4rem 0;
     background: #22bc5b;
 }
-#about img {
+
+/* Styling för profilbilden, om du vill */
+.profile-img {
+    display: block;
+    margin: 1rem auto;
     width: 200px;
     border-radius: 50%;
-    margin-bottom: 1rem;
-}
-#cv {
-    width: 100%;
-    height: 100vh;
-    padding: 4rem 0;
-    background: #22bc5b;
-}
-#cv ul {
+  }
+  
+  /* Container för nedladdningsknapparna */
+  .download-buttons {
     display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 1rem;
-}
-#cv ul li {
-    margin: 0 1rem;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Styling för varje nedladdningsknapp */
+  .download-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color:transparent;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 120px;
+    color: #060606;
+  }
+  
+  .download-btn:hover {
+    background-color:transparent;
+    transform: scale(1.05);
+  }
+  
+  /* Styling för knapptillhörande bild */
+  .download-btn img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Styling för texten under bilden */
+  .download-btn span {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+
 #projects {
     width: 100%;
 

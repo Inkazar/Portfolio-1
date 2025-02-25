@@ -7,4 +7,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });
+  // Hämta knappen och dropdown-listan
+const cvToggle = document.getElementById('cv-toggle');
+const cvOptions = document.getElementById('cv-options');
+
+// Lägg till en klick-händelse på knappen
+cvToggle.addEventListener('click', function(e) {
+  e.preventDefault();
+  // Toggle: Om listan är synlig, göm den; annars visa den
+  if (cvOptions.style.display === 'block') {
+    cvOptions.style.display = 'none';
+  } else {
+    cvOptions.style.display = 'block';
+  }
+});
+
   

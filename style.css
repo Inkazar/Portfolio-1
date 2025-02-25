@@ -92,12 +92,12 @@ nav ul li a.active {
     border-radius: 50%;
     border: 2px solid #030303;
 }
-/* Styling för CV-knappen i hero-sektionen 
+/* Styling för CV-knappen i hero-sektionen  */
 .hero-cv {
-    margin-top: 1rem;  /* Justera avståndet från övriga element 
+    margin-top: 1rem;  /* Justera avståndet från övriga element */
     margin-right: 6rem;
     text-align: center;
-  } */
+  } 
   
   .cv-button {
     width: 100px;          /* Ställ in bildens storlek (justera vid behov) */
@@ -112,8 +112,8 @@ nav ul li a.active {
   }
   /* Styling för dropdown-listan */
 .dropdown-options {
-    display: none;  /* Gömmer listan som standard */
-    list-style: none;
+    display:none;  /* Gömmer listan som standard */
+    list-style:none;
     padding: 0;
     margin: 0.5rem 0 0;
     border: 1px solid #ccc;
@@ -137,12 +137,16 @@ nav ul li a.active {
   .dropdown-options li:hover {
     background: #f0f0f0;
   }
+  .dropdown-options.show {
+    display: block;  /* Visar listan när användaren klickar på knappen */
+  }
   
   /* Valfri styling för själva knappen som innehåller bilden */
   .cv-toggle-btn {
     background: transparent;
     border: none;
-    padding: 0;
+    padding: 3rem 0.5rem;
+    cursor: pointer;
   }
 
 

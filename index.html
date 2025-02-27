@@ -50,7 +50,7 @@
             För snart 11 år sedan flyttade jag och min sambo Johanna till ett hus i Gnarp, vi har en 9 årig dotter och en 6 årig son tillsammans. 
             På fritiden spelar jag gärna golf eller fiskar när jag inte håller på med något hemma eller umgås med familj och vänner. 
         </cite>
-        <img src="/img/Lax.jpg" alt="Bild på mig" class="profile-img">
+        <img src="/img/suit.jpg" alt="Bild på mig" class="profile-img">
         
         <!-- Container för de tre nedladdningsknapparna -->
         <div class="download-buttons">
@@ -93,11 +93,18 @@
     </section>
     <section id="contact">
         <h2>Kontakt</h2>
-        <p>Kontakta mig på följande sätt</p>
-        <ul>
-            <li><a href="mailto:johndeere.daniel@gmail.com">Maila mig</a></li>  
-            
-        </ul>
+        <form id="contact-form" action="https://formspree.io/f/mgvogvvv" method="POST">
+          <label for="name">Namn:</label>
+          <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+          
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="_replyto" placeholder="Din e-post" required>
+          
+          <label for="message">Meddelande:</label>
+          <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." rows="5" required></textarea>
+          
+          <button type="submit">Skicka</button>
+        </form>
         <div class="social-links">
             <a href="mailto:johndeere.daniel@gmail.com" target="_blank">
                 <img src="/icons/email.png" alt="Email">

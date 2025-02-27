@@ -181,6 +181,15 @@ height: 100vh;
     width: 100%;
     border-radius: 5px;
 }
+.skills {
+    display: flex;
+     /* Centrerar länkarna horisontellt */
+    gap: 1rem;             /* Avstånd mellan ikonerna */
+    margin-top: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
 #reference {
     width: 100%;
 
@@ -273,7 +282,7 @@ form textarea {
     width: 100%;
     padding: 0.75rem;
     margin: 0.5rem 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 

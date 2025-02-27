@@ -203,7 +203,23 @@ height: 100vh;
     padding: 4rem 0;
     background: #22bc5b;
 }
-
+.social-links {
+    display: flex;
+    justify-content: center; /* Centrerar länkarna horisontellt */
+    gap: 1rem;             /* Avstånd mellan ikonerna */
+    margin-top: 1rem;      /* Avstånd från övrigt innehåll */
+  }
+  
+  .social-links a img {
+    width: 40px;           /* Storlek på ikonerna, justera vid behov */
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.1); /* Liten zoom-effekt vid hover */
+  }
+  
 form input,
 form textarea {
     width: 100%;

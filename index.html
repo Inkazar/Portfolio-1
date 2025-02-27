@@ -98,7 +98,15 @@
           <input type="text" id="name" name="name" placeholder="Ditt namn" required>
           
           <label for="email">E-post:</label>
-          <input type="email" id="email" name="_replyto" placeholder="Din e-post" required>
+          <input 
+          type="email" 
+          id="email" 
+          name="_replyto" 
+          placeholder="Din e-post" 
+          required
+          pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+          oninvalid="this.setCustomValidity('Vänligen ange en giltig e-postadress, t.ex. namn@domän.com')"
+            oninput="this.setCustomValidity('')">
           
           <label for="message">Meddelande:</label>
           <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." rows="5" required></textarea>

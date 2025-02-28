@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="#hero">Hem</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">My Skills</a></li>
                 
                 <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#reference">Referens</a></li>
@@ -44,13 +44,11 @@
             <section id="skills">
                 <h2>My Skills</h2>
                 <div class="skills-container">
-                  <div class="skill">
-                    <img src="/icons/csharp.png" alt="C#">
-                    <p>C#</p>
-                  </div>
+                  
                   <div class="skill">
                     <img src="/icons/sql.png" alt="SQLSMS">
                     <p>SQLSMS</p>
+                    </div>
                   <div class="skill">
                     <img src="/icons/html5.jpg" alt="HTML5">
                     <p>HTML5</p>
@@ -61,7 +59,10 @@
                   </div>
                   <div class="skill">
                     <img src="/icons/JS.png" alt="JavaScript">
-                    <p>JavaScript</p>
+                    <p>JavaScript</p><div class="skill">
+                    <img src="/icons/csharp.png" alt="C#">
+                    <p>C#</p>
+                  </div>
                   
                 </div>
                 
@@ -87,7 +88,8 @@
       </section>
     
       <section id="projects">
-        <h2>Projekt</h2>
+        <h2>Projects</h2>
+        <p>only placeholders for now</p>
         <div class="projects-buttons">
             <a href="#" class="project-btn">
               <img src="/img/cash.jpg" alt="Projekt 1">
@@ -128,8 +130,15 @@
         <h2>Kontakt</h2>
         <form id="contact-form" action="https://formspree.io/f/mgvogvvv" method="POST">
           <label for="name">Namn:</label>
-          <input type="text" id="name" name="name" placeholder="Ditt namn" required>
-          
+          <input type="text" 
+  id="name" 
+  name="name" 
+  placeholder="Förnamn Efternamn" 
+  required
+  pattern="^(?!.*\d)([A-Za-z]+(?:-[A-Za-z]+)?)(\s+[A-Za-z]+(?:\s+[A-Za-z]+)*)$"
+  oninvalid="this.setCustomValidity('Vänligen ange både för- och efternamn, t.ex. Anna Andersson')"
+  oninput="this.setCustomValidity('')">
+
           <label for="email">E-post:</label>
           <input 
           type="email" 
@@ -137,8 +146,8 @@
           name="_replyto" 
           placeholder="Din e-post" 
           required
-          pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-          oninvalid="this.setCustomValidity('Vänligen ange en giltig e-postadress, t.ex. namn@domän.com')"
+          pattern="^(?!.*\d)([A-Za-z]+(?:-[A-Za-z]+)?)(\s+[A-Za-z]+(?:\s+[A-Za-z]+)*)$"
+          oninvalid="this.setCustomValidity('Namnet får inte innehålla siffror och måste innehålla både för- och efternamn. Förnamn kan innehålla bindestreck, t.ex. Anna-Karin Andersson.')"
             oninput="this.setCustomValidity('')">
           
           <label for="message">Meddelande:</label>

@@ -60,4 +60,4 @@ License
 This project is licensed under the MIT License.
 
 Contact
-For inquiries or feedback, please email me at your-email@example.com.
+For inquiries or feedback, please email me at johndeere.daniel@gmail.com.

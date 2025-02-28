@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    font-family:Arial, Helvetica, sans-serif; 
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 html, body {
     height: 100%;
     margin: 0;
+    
 }
 main {
     flex: 1;
@@ -107,11 +109,17 @@ section h2 {
 }
 #about {
     
-    width: 100%;
-    height: 100vh;
-    padding: 4rem 0;
     background: #22bc5b;
+    padding: 4rem 0;
+
 }
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
 
 /* Styling för profilbilden, om du vill */
 .profile-img {
@@ -181,14 +189,58 @@ height: 100vh;
     width: 100%;
     border-radius: 5px;
 }
-.skills {
+/* Styling för Kunskapssektionen */
+#skills {
+    padding: 2rem 0;
+    text-align: center;
+    
+  }
+  
+  #skills h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Container för ikonerna */
+  .skills-container {
+    
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 30px;
     display: flex;
-     /* Centrerar länkarna horisontellt */
-    gap: 1rem;             /* Avstånd mellan ikonerna */
-    margin-top: 1rem;
-    width: 40px;
-    height: 40px;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Avstånd mellan varje ikon */
+  }
+  
+  /* Individuell skill-box */
+  .skill {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Ikonbilderna */
+  .skill img {
+    width: 60px; /* Justera storleken vid behov */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill img:hover {
+    transform: scale(1.1); /* Liten zoom-effekt vid hover */
+  }
+  
+  /* Text under ikonerna */
+  .skill p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
 
 #reference {
     width: 100%;
@@ -198,13 +250,16 @@ height: 100vh;
     background: #22bc5b;
 }
 .reference {
+
     margin: 2rem auto;
     max-width: 600px;
-    background: #ffffff43;   
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff2b;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.943);
     border-radius: 5px;
 }
-
+.reference h3{
+    text-align: center;
+}
 #contact {
 
 height: 100vh;

@@ -13,19 +13,19 @@
         <nav>
             <ul>
                 <li><a href="#hero">Hem</a></li>
-                <li><a href="#about">Om mig</a></li>
+                <li><a href="#about">About Me</a></li>
                 
-                <li><a href="#projects">Projekt</a></li>
+                <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#reference">Referens</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     <section id="hero">
         <div class="hero-container">
             <!-- Textdel med rubrik-->
         <div class="hero-text">
-            <h1>Hej, jag heter Daniel!</h1>
-            <p>.NET-utvecklare to be.</p>
+            <h1>.NET-Dev to be.</h1>
+            <p>Hi, I'm Daniel. I enjoy solving problems, learning new things and working in teams!</p>
         </div>      
         
         <!-- Bilddelen -->
@@ -40,20 +40,35 @@
     <section id="about">
         
         <div class="about-container">
-            <h2>Om mig</h2>
-        <p>Jag är en glad, positiv, social och trevlig kille som är 35 år. 
-            <br/><br/>Jag var tillsvidareanställd som skördarförare hos Sjölanders skogsentreprenad senast i 10.5år men nu vill jag söka mig ifrån skogen och göra något annat, därför håller jag på att studera. 
-            Jag är tekniskt intresserad och i mitt yrke fick man mycket erfarenhet av olika reparationer, stora som små. Tex el problem eller större hydraulik haverier som skall lagas. Här har jag även lärt mig att vara lösningsorienterad, grejorna ska börja rulla så snabbt och smidigt som möjligt.
-            <br/><br/>Jag har stor maskinvana, dels från yrket såklart, dels på fritiden så kör och lagar jag traktorer, t.ex min baklastare eller svärfars jordbrukare. 
-            Jag är van att jobba självständigt men är en lagspelare i grunden. 
-            <br/><br/>Jag har B-körkort med B96 tillägg och egen bil.
-            <br/><br/>
-            Jag är uppväxt i Långå, Härjedalen med min pappa och styvmor. Efter examen flyttade jag vid 16års ålder till Ljusdal och har varit i Hälsingland sedan dess förutom en kortare tid i Sundsvall i knappt ett år.
-            För snart 11 år sedan flyttade jag och min sambo Johanna till ett hus i Gnarp, vi har en 9 årig dotter och en 6 årig son tillsammans. 
-            På fritiden spelar jag gärna golf eller fiskar när jag inte håller på med något hemma eller umgås med familj och vänner. 
-        </p>
-        <img src="/img/suit.jpg" alt="Bild på mig" class="profile-img">
+            
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                  <div class="skill">
+                    <img src="/icons/csharp.png" alt="C#">
+                    <p>C#</p>
+                  </div>
+                  <div class="skill">
+                    <img src="/icons/sql.png" alt="SQLSMS">
+                    <p>SQLSMS</p>
+                  <div class="skill">
+                    <img src="/icons/html5.jpg" alt="HTML5">
+                    <p>HTML5</p>
+                  </div>
+                  <div class="skill">
+                    <img src="/icons/CSS.png" alt="CSS">
+                    <p>CSS</p>
+                  </div>
+                  <div class="skill">
+                    <img src="/icons/JS.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                  
+                </div>
+                
+              
+        
         </div>
+        </section>
         <!-- Container för de tre nedladdningsknapparna -->
         <div class="download-buttons">
           <a href="/files/CV.docx" download class="download-btn">
@@ -71,38 +86,28 @@
         </div>
       </section>
     
-    <section id="projects">
+      <section id="projects">
         <h2>Projekt</h2>
-        <p>Här är några av mina projekt</p>
-        <div class="project">
-            <img src="project1.jpg" alt="Projekt 1">
-            <h3>Projekt 1</h3>
-            <p>Detta är mitt första projekt</p>
-        </div>
-            <br>
-            <br>
-            <br>
-            <section id="skills">
-                <h2>Kunskaper</h2>
-                <div class="skills-container">
-                  <div class="skill">
-                    <img src="/icons/csharp.png" alt="C#">
-                    <p>C#</p>
-                  </div>
-                  <div class="skill">
-                    <img src="/icons/html5.jpg" alt="HTML5">
-                    <p>HTML5</p>
-                  </div>
-                  <div class="skill">
-                    <img src="/icons/CSS.png" alt="CSS">
-                    <p>CSS</p>
-                  </div>
-                  <div class="skill">
-                    <img src="/icons/JS.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                  
-                </div>
-              </section>
+        <div class="projects-buttons">
+            <a href="#" class="project-btn">
+              <img src="/img/cash.jpg" alt="Projekt 1">
+              <br><H3>Cashiersystem</H3>
+              <br><p>This is a cashiersystem built in C#</p>
+            </a>
+            <a href="#" class="project-btn">
+              <img src="/img/database.jpg" alt="Hotelapp">
+              <br><h3>Hotelapp</h3>
+              <br><p>This is a hotelapp built in C# and SQLSMS</p>
+            </a>
+            <a href="#" class="project-btn">
+              <img src="/img/placeholder.jpg" alt="placeholder">
+              <br><h3>Placeholder</h3>
+              <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sapiente.</p>
+            </a>
+          </div>
+      </section>
+            
+            
         </body>
     </section>
     <section id="reference">
@@ -110,12 +115,13 @@
         
         <div class="reference">
             
-            <h3>Referens 1</h3>
             
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quia ratione sapiente sequi delectus eos, optio dolorem aspernatur quidem culpa perferendis possimus distinctio dolor? Iste molestiae expedita voluptas eligendi esse!</p>
-            <h3>Referens 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem inventore et vero excepturi deserunt, non ad molestias corporis ut repellat, porro provident minima error iusto ratione natus, tempore architecto modi!</p>
-        
+            
+            <cite>"Du är alltid så jäkla positiv! Hur kan man alltid se lösningar?"</cite>
+           <h3>-Nisse, Skotareförare</h3>
+            <br><br>
+            <cite>"Du borde ju börja jobba med datorer å sånt!"</cite>
+          <h3>-Anders, Skogsmaskinsentreprenör.</h3>
         </div>
     </section>
     <section id="contact">

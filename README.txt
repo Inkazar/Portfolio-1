@@ -18,7 +18,7 @@ Formspree: A service used for processing contact form submissions.
 
 
 Installation
-Clone the Repository:
+Clone the Repository: 
 
 bash
 Kopiera

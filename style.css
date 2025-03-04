@@ -19,7 +19,7 @@ main {
 }
 
 nav {
-    background-color: #1d550ae2;
+    background-color: #252d2f;
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,7 +29,8 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
-    
+    font-size: large;
+    font-weight: bold;
     list-style: none;
     padding: 1rem;
     margin: 0;
@@ -40,7 +41,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #030303;
-    background-color: #2a7a0f;
+    background-color: #ff8c55;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background 0.3s ease;
@@ -58,8 +59,8 @@ nav ul li a.active {
 
     height: 100vh;
     padding: 4rem 0;
-    background: #22bc5b;
-    background-image: url(/img/background.jpg);
+    background: #0f8c3d;
+    background-image: url(/img/background-hero.jpg);
     background-size: cover;
     background-position: center;
 }

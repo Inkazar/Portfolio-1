@@ -327,11 +327,15 @@ height: 100vh;
   #contact form {
     max-width: 600px;
     margin: 0 auto;
-    background: #0ae94d;
+    background: #0ae94d00;
     padding: 2rem;
     border-radius: 8px;
     color: #333;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    
   }
   
   #contact form label {
@@ -344,12 +348,12 @@ height: 100vh;
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #07ee50;
+    border: 1px solid #07ee5000;
     border-radius: 5px;
   }
   
   #contact form button {
-    background: #03ad61;
+    background: #ffffff14;
     color:#030303;
     font-weight: bold;
     font-size: large;
@@ -361,7 +365,7 @@ height: 100vh;
   }
   
   #contact form button:hover {
-    background:#1d550ae2;
+    background:#00000047;
   }
   
 .social-links {

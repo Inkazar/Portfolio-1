@@ -58,8 +58,7 @@ nav ul li a.active {
     width: 100%;
 
     height: 100vh;
-    padding: 10rem 0;
-    background: #0f8c3d;
+    padding: 10rem;
     background-image: url(/img/background-hero.jpg);
     background-size: cover;
     background-position: center;
@@ -68,8 +67,8 @@ nav ul li a.active {
 .flip-container{
   width: 100%;
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #e3dbf6, #a99bf9); */
   padding: 10px;
+  padding-right: 7px;
 
 }
 .card{
